@@ -17,7 +17,7 @@ public class GeofenceBroadcastReceiver extends BroadcastReceiver {
         GeofencingEvent geofencingEvent = GeofencingEvent.fromIntent(intent);
         if (geofencingEvent.hasError()) {
             String errorMessage = GeofenceStatusCodes.getStatusCodeString(geofencingEvent.getErrorCode());
-            Log.e("지오펜스 에러1", errorMessage);
+            Log.e("지오펜스 에러", errorMessage);
             return;
         }
 
