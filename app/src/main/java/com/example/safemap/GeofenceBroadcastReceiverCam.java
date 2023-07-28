@@ -9,7 +9,7 @@ import com.google.android.gms.location.Geofence;
 import com.google.android.gms.location.GeofenceStatusCodes;
 import com.google.android.gms.location.GeofencingEvent;
 
-public class GeofenceBroadcastReceiver extends BroadcastReceiver {
+public class GeofenceBroadcastReceiverCam extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
