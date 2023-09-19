@@ -3,7 +3,7 @@
     <style name="Theme.PaiMap" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">#282728</item>
+        <item name="colorPrimaryVariant">#daeefe</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -12,7 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- 네비게이션 바 색깔 바꿈, 단 색깔을 바꾸는 순간 아이콘 색은 흰색으로 고정됨 -->
-        <item name="android:navigationBarColor">#282728</item>
+        <item name="android:navigationBarColor">#b89b80</item>
 
         <!-- 스테이터스 바 아이콘 색깔 바꿈, ture(검은색) false(흰색) -->
         <item name="android:windowLightStatusBar">false</item>

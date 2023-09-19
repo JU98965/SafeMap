@@ -9,7 +9,7 @@ import com.google.android.gms.location.Geofence;
 import com.google.android.gms.location.GeofenceStatusCodes;
 import com.google.android.gms.location.GeofencingEvent;
 
-public class GeofenceBroadcastReceiverCam extends BroadcastReceiver {
+public class GeofenceBroadcastReceiverAnimalHospital extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -29,7 +29,7 @@ public class GeofenceBroadcastReceiverCam extends BroadcastReceiver {
 //            // 데이터를 Activity로 전달하기 위해 Broadcast를 전송합니다.
             Intent broadcastIntent = new Intent();
             broadcastIntent.setAction("your_broadcast_action");
-            broadcastIntent.putExtra("key", 1);
+            broadcastIntent.putExtra("keyAnimalHospital", 1);
             context.sendBroadcast(broadcastIntent);
 
         } else if (geofenceTransition == Geofence.GEOFENCE_TRANSITION_EXIT) {
@@ -37,7 +37,7 @@ public class GeofenceBroadcastReceiverCam extends BroadcastReceiver {
             Log.d("지오펜스 지역 이탈", "지오펜스 지역 이탈, 지오펜스 지역 이탈, 지오펜스 지역 이탈, 지오펜스 지역 이탈");
             Intent broadcastIntent = new Intent();
             broadcastIntent.setAction("your_broadcast_action");
-            broadcastIntent.putExtra("key", 2);
+            broadcastIntent.putExtra("keyAnimalHospital", 2);
             context.sendBroadcast(broadcastIntent);
         }
 

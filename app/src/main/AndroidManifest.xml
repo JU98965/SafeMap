@@ -13,7 +13,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="안전할 지도"
+        android:label="With Safe"
         android:supportsRtl="true"
         android:theme="@style/Theme.PaiMap"
         tools:targetApi="31">
@@ -36,7 +36,10 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".GeofenceBroadcastReceiver"/>
+        <receiver android:name=".GeofenceBroadcastReceiverPark"/>
+        <receiver android:name=".GeofenceBroadcastReceiverAnimalHospital"/>
+        <receiver android:name=".GeofenceBroadcastReceiverStreetLight"/>
+        <receiver android:name=".GeofenceBroadcastReceiverCCTV"/>
     </application>
 
 </manifest>
